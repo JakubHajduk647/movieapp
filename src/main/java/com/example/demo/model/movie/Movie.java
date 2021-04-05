@@ -45,7 +45,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "vote_average",
     "vote_count"
 })
-public class Movie implements Serializable
+public class Movie extends TMDBDataModel implements Serializable
 {
 
     @JsonProperty("adult")

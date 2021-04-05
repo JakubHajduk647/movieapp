@@ -12,18 +12,20 @@ public class FilmwebApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(FilmwebApplication.class, args);
-		
+
 	}
+
 	@Value("${api.root}")
 	private String apiRoot;
 	@Value("${api.token}")
 	private String apiToken;
-	
 	@Bean
 	public RestTemplate getRestTemplate() {
-		return new RestTemplateBuilder().rootUri(apiRoot)
-										.defaultHeader("Authorization", "Bearer "+apiToken)
-										.build();
-		
+		return new RestTemplateBuilder().defaultHeader("Authorization", "Bearer "+apiToken)
+									  	.rootUri(apiRoot)
+									  	.build();
 	}
+
+	
+
 }
