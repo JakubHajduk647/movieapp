@@ -1,43 +1,45 @@
-<div ng-controller="MoviesPopularController">
+<div class="container">
+	<div ng-controller="MoviesPopularController">
 
 
-	<slick slides-to-show="6" slides-to-scroll="4" setting="responsiveConfig" arrows="true" ng-if="movies.length > 0">
-
-		<div ng-repeat="movie in movies">
-			<div class="px-1 ">
-				<div class="card rounded-0  border-0 " style="max-height: 100%">
-					<img ng-src="{{ 'http://image.tmdb.org/t/p/w154' + movie['poster_path'] }}"
-						class="img-fluid card-img-top rounded-0" alt="Card image cap">
-						<div class="card-head bg-light border-0  ">
-							<div class="d-flex  justify-content-between px-2  ">
-								<div class="">
-									<small>{{movie["popularity"]}}</small>
-									<i class="fas fa-fire-alt px-1" style="color: #bf480d;"></i>
-								</div>
-								<div class="">
-									<small>{{movie["vote_average"]}}</small>
-									<i class="far fa-star px-1" style="color:#bfa70d ;"></i>
+		<slick slides-to-show="6" slides-to-scroll="4" setting="responsiveConfig" arrows="true" ng-if="movies.length > 0">
+	
+			<div ng-repeat="movie in movies">
+				<div class="px-1 ">
+					<div class="card rounded-0  border-0 " style="max-height: 100%">
+						<img ng-src="{{ 'http://image.tmdb.org/t/p/w154' + movie['poster_path'] }}"
+							class="img-fluid card-img-top rounded-0" alt="Card image cap">
+							<div class="card-head bg-light border-0  ">
+								<div class="d-flex  justify-content-between px-2  ">
+									<div class="">
+										<small class="font-weight-bold">{{movie["popularity"] | kilo}}</small>
+										<i class="fas fa-fire-alt px-1 fire-orange" ></i>
+									</div>
+									<div class="">
+										<small class="font-weight-bold">{{movie["vote_average"]}}</small>
+										<i class="far fa-star px-1 yellow" ></i>
+									</div>
 								</div>
 							</div>
+						<div class="card-title">
+							<h5 class=" text-wrap">
+								<a href="{{'#!movie/'+ movie['id']}}" class=" col-xl-3 d-inline-block text-dark " style="max-width:inherit;">
+									<div data-fittext  data-fittext-min="10" data-fittext-max="inherit">
+									{{movie["title"]}}
+									</div>
+								</a>
+							</h5>
+							
 						</div>
-					<div class="card-title">
-						<h5 class=" text-wrap">
-							<a href="{{'#!movie/'+ movie['id']}}" class=" col-xl-3 d-inline-block text-dark " style="max-width:inherit;">
-								<div data-fittext  data-fittext-min="10" data-fittext-max="inherit">
-								{{movie["title"]}}
-								</div>
-							</a>
-						</h5>
-						
 					</div>
 				</div>
-			</div>
-	</slick>
-
-
-
-
-
-
-</div>
+		</slick>
+	
+	
+	
+	
+	
+	
+	</div>
+	</div>
 </div>

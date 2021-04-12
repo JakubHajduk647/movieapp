@@ -6,7 +6,7 @@
   "homepage": "",
   "dependencies": {
     "angular": "^1.8.2",
-    "bootstrap": "4.0",
+    "bootstrap": "4.2.x",
     "slick-carousel": "^1.8.1",
     "angular-slick-carousel": "^3.1.7"
   }

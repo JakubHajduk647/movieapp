@@ -22,8 +22,12 @@
 			<div class="movieInfo">
 				<h6>Release date: {{movie['release_date']}}</h6>
 				<h6>
-					Genre: <span class="label label-default"><a href="#"
-						class="link-dark">{$m['name']}, </a></span>
+					Genre: <span ng-repeat="genre in movie['genres']" class="label label-default">
+					<a href="#" class="badge badge-light">{{genre['name']}}</a>
+					
+					
+					
+					</span>
 
 
 				</h6>
@@ -31,74 +35,26 @@
 
 			<div>
 				<h6>
-					Popularity: {{$movie['popularity']}} <i class="fas fa-fire-alt"
-						style="color: #bf480d;"></i>
+					Popularity: {{movie['popularity']}} <i class="fas fa-fire-alt fire-orange"
+						></i>
 				</h6>
-				<div ng-controller="RatingController">
-    <h4>Default</h4>
-    <span uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-    <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
-
-    <pre style="margin:15px 0;">Rate: <b>{{rate}}</b> - Readonly is: <i>{{isReadonly}}</i> - Hovering over: <b>{{overStar || "none"}}</b></pre>
-
-    <button type="button" class="btn btn-sm btn-danger" ng-click="rate = 0" ng-disabled="isReadonly">Clear</button>
-    <button type="button" class="btn btn-sm btn-default" ng-click="isReadonly = ! isReadonly">Toggle Readonly</button>
-    <hr />
-
-    <h4>Custom icons</h4>
-    <div ng-init="x = 5"><span uib-rating ng-model="x" max="15" state-on="'glyphicon-ok-sign'" state-off="'glyphicon-ok-circle'" aria-labelledby="custom-icons-1"></span> <b>(<i>Rate:</i> {{x}})</b></div>
-    <div ng-init="y = 2"><span uib-rating ng-model="y" rating-states="ratingStates" aria-labelledby="custom-icons-2"></span> <b>(<i>Rate:</i> {{y}})</b></div>
-</div>
+				<div ng-include="'rating.html'"></div>
 
 			</div>
 		</div>
 
-		<div class="col-3 d-flex align-items-center"
-			style="background-color: lawngreen;"></div>
+
 	</div>
 </div>
 </div>
 <div class="row">
 	<div class="col-12">
 
-		<h4>Table</h4>
-		<h5>Default</h5>
-
+		
 
 		<div class="row pt-5">
 
 			<div class="  col-lg-2 pb-1 pt-1">
-
-				<div class="card h-100  rounded shadow ">
-
-
-					<img src="https://image.tmdb.org/t/p/w138_and_h175_face{$c["
-						profile_path"]}"
-                                                class="img-fluid card-img-top">
-
-					<img
-						src="../../app/views/images/Profile_avatar_placeholder_large.png"
-						class="img-fluid card-img-top">
-
-
-
-
-
-					<div class="p-4">
-
-
-						<div class="small mb-0 ">
-
-							<h6>
-								<a href=""> </a>
-							</h6>
-
-							<p class="card-text  ">}</p>
-
-						</div>
-
-					</div>
-				</div>
 
 
 			</div>

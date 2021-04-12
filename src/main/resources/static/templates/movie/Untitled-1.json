@@ -1,0 +1,133 @@
+{
+    "id": 399566,
+    "results": {
+        "CA": {
+            "link": "https://www.themoviedb.org/movie/399566-godzilla-vs-kong/watch?locale=CA",
+            "rent": [
+                {
+                    "display_priority": 2,
+                    "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+                    "provider_id": 2,
+                    "provider_name": "Apple iTunes"
+                },
+                {
+                    "display_priority": 3,
+                    "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+                    "provider_id": 3,
+                    "provider_name": "Google Play Movies"
+                },
+                {
+                    "display_priority": 10,
+                    "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+                    "provider_id": 10,
+                    "provider_name": "Amazon Video"
+                },
+                {
+                    "display_priority": 12,
+                    "logo_path": "/vDCcryHD32b0yMeSCgBhuYavsmx.jpg",
+                    "provider_id": 192,
+                    "provider_name": "YouTube"
+                },
+                {
+                    "display_priority": 35,
+                    "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
+                    "provider_id": 68,
+                    "provider_name": "Microsoft Store"
+                }
+            ]
+        },
+        "GB": {
+            "link": "https://www.themoviedb.org/movie/399566-godzilla-vs-kong/watch?locale=GB",
+            "rent": [
+                {
+                    "display_priority": 2,
+                    "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+                    "provider_id": 2,
+                    "provider_name": "Apple iTunes"
+                },
+                {
+                    "display_priority": 8,
+                    "logo_path": "/pZgeSWpfvD59x6sY6stT5c6uc2h.jpg",
+                    "provider_id": 130,
+                    "provider_name": "Sky Store"
+                },
+                {
+                    "display_priority": 10,
+                    "logo_path": "/sVBEF7q7LqjHAWSnKwDbzmr2EMY.jpg",
+                    "provider_id": 10,
+                    "provider_name": "Amazon Video"
+                },
+                {
+                    "display_priority": 11,
+                    "logo_path": "/vjKeS7Y9fNyqNtvp2ROCc71iu1u.jpg",
+                    "provider_id": 40,
+                    "provider_name": "Chili"
+                },
+                {
+                    "display_priority": 18,
+                    "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+                    "provider_id": 35,
+                    "provider_name": "Rakuten TV"
+                },
+                {
+                    "display_priority": 23,
+                    "logo_path": "/uA7pG0PDWFnWWwlLmdG02cmJCzB.jpg",
+                    "provider_id": 93,
+                    "provider_name": "Talk Talk TV"
+                },
+                {
+                    "display_priority": 35,
+                    "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
+                    "provider_id": 68,
+                    "provider_name": "Microsoft Store"
+                }
+            ]
+        },
+        "IE": {
+            "link": "https://www.themoviedb.org/movie/399566-godzilla-vs-kong/watch?locale=IE",
+            "rent": [
+                {
+                    "display_priority": 2,
+                    "logo_path": "/q6tl6Ib6X5FT80RMlcDbexIo4St.jpg",
+                    "provider_id": 2,
+                    "provider_name": "Apple iTunes"
+                },
+                {
+                    "display_priority": 3,
+                    "logo_path": "/p3Z12gKq2qvJaUOMeKNU2mzKVI9.jpg",
+                    "provider_id": 3,
+                    "provider_name": "Google Play Movies"
+                },
+                {
+                    "display_priority": 8,
+                    "logo_path": "/pZgeSWpfvD59x6sY6stT5c6uc2h.jpg",
+                    "provider_id": 130,
+                    "provider_name": "Sky Store"
+                },
+                {
+                    "display_priority": 18,
+                    "logo_path": "/wuViyDkbFp4r7VqI0efPW5hFfQj.jpg",
+                    "provider_id": 35,
+                    "provider_name": "Rakuten TV"
+                },
+                {
+                    "display_priority": 35,
+                    "logo_path": "/paq2o2dIfQnxcERsVoq7Ys8KYz8.jpg",
+                    "provider_id": 68,
+                    "provider_name": "Microsoft Store"
+                }
+            ]
+        },
+        "US": {
+            "link": "https://www.themoviedb.org/movie/399566-godzilla-vs-kong/watch?locale=US",
+            "flatrate": [
+                {
+                    "display_priority": 7,
+                    "logo_path": "/aS2zvJWn9mwiCOeaaCkIh4wleZS.jpg",
+                    "provider_id": 384,
+                    "provider_name": "HBO Max"
+                }
+            ]
+        }
+    }
+}
