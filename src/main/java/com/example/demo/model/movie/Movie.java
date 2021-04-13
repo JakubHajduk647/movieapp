@@ -1,10 +1,15 @@
 
 package com.example.demo.model.movie;
 
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Transient;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
@@ -45,59 +50,85 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "vote_average",
     "vote_count"
 })
+@Entity
 public class Movie extends TMDBDataModel implements Serializable
 {
-
+	@Transient
     @JsonProperty("adult")
     private Boolean adult;
+	@Transient
     @JsonProperty("backdrop_path")
     private Object backdropPath;
+	@Transient
     @JsonProperty("belongs_to_collection")
     private Object belongsToCollection;
+	@Transient
     @JsonProperty("budget")
     private Integer budget;
+	@Transient
     @JsonProperty("genres")
     private List<Genre> genres = null;
+	@Transient
     @JsonProperty("homepage")
     private String homepage;
+	@Id
     @JsonProperty("id")
-    private Integer id;
+    private Long id;
     @JsonProperty("imdb_id")
     private String imdbId;
+    @Transient
     @JsonProperty("original_language")
     private String originalLanguage;
+    @Transient
     @JsonProperty("original_title")
     private String originalTitle;
+    @Transient
     @JsonProperty("overview")
     private String overview;
+    @Transient
     @JsonProperty("popularity")
+    
     private Double popularity;
+    @Transient
     @JsonProperty("poster_path")
     private String posterPath;
+    @Transient
     @JsonProperty("production_companies")
     private List<ProductionCompany> productionCompanies = null;
+    @Transient
     @JsonProperty("production_countries")
     private List<ProductionCountry> productionCountries = null;
+    @Transient
     @JsonProperty("release_date")
     private String releaseDate;
+    @Transient
     @JsonProperty("revenue")
     private Integer revenue;
+    @Transient
     @JsonProperty("runtime")
     private Integer runtime;
+    @Transient
     @JsonProperty("spoken_languages")
     private List<SpokenLanguage> spokenLanguages = null;
+    @Transient
     @JsonProperty("status")
     private String status;
+    @Transient
     @JsonProperty("tagline")
     private String tagline;
+    
     @JsonProperty("title")
     private String title;
+    @Transient
     @JsonProperty("video")
     private Boolean video;
+    @Transient
     @JsonProperty("vote_average")
     private Double voteAverage;
+    @Transient
     @JsonProperty("vote_count")
     private Integer voteCount;
+    @Transient
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = 978602787754621989L;
@@ -163,12 +194,12 @@ public class Movie extends TMDBDataModel implements Serializable
     }
 
     @JsonProperty("id")
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
     @JsonProperty("id")
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
